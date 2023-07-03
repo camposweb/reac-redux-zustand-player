@@ -2,10 +2,10 @@ import { MessageCircle } from 'lucide-react'
 import { Header } from '../../components/Header'
 import { VideoPlayer } from '../../components/VideoPlayer'
 import { Module } from '../../components/Module'
-import { UseAppSelector } from '../../store'
+import { useAppSelector } from '../../store'
 
 export function Player() {
-  const modules = UseAppSelector((state) => state.player.course.modules)
+  const modules = useAppSelector((state) => state.player.course.modules)
   return (
     <div className="flex h-screen items-center justify-center bg-zinc-950 text-zinc-50">
       <div className="flex w-[1100px] flex-col gap-6">

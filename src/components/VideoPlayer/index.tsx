@@ -2,7 +2,7 @@ import ReactPlayer from 'react-player'
 import { UseAppSelector } from '../../store'
 
 export function VideoPlayer() {
-  const video = UseAppSelector((state) => {
+  const lesson = UseAppSelector((state) => {
     const { currentModuleIndex, currentLessonIndex } = state.player
     const currentLesson =
       state.player.course.modules[currentModuleIndex].lessons[
@@ -17,7 +17,7 @@ export function VideoPlayer() {
         width={'100%'}
         height={'100%'}
         controls={true}
-        url={`https://www.youtube.com/watch?v=${video.id}`}
+        url={`https://www.youtube.com/watch?v=${lesson.id}`}
       />
     </div>
   )
