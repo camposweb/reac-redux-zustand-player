@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { useAppSelector } from '..'
 
-const playerSlice = createSlice({
+export const playerSlice = createSlice({
   name: 'player',
   initialState: {
     course: {
@@ -13,6 +13,16 @@ const playerSlice = createSlice({
             {
               id: 'NvnJRLTG_5Y',
               title: 'Fundamentos do Redux',
+              duration: '09:13',
+            },
+            {
+              id: 'P5ceqNLibpA',
+              title: 'Muito além do código',
+              duration: '09:13',
+            },
+            {
+              id: '2alg7MQ6_sI',
+              title: 'Como usar Git e Github',
               duration: '09:13',
             },
           ],
