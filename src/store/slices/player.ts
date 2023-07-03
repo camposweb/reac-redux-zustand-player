@@ -10,7 +10,7 @@ const playerSlice = createSlice({
           title: 'Iniciando com React',
           lessons: [
             {
-              id: 'Axi6biI65DY',
+              id: 'NvnJRLTG_5Y',
               title: 'Fundamentos do Redux',
               duration: '09:13',
             },
@@ -21,7 +21,12 @@ const playerSlice = createSlice({
           title: 'Iniciando com Redux',
           lessons: [
             {
-              id: 'IZX-4VmKrRo',
+              id: 'BDVdX9JbZB0',
+              title: 'Fundamentos do Redux 01',
+              duration: '09:13',
+            },
+            {
+              id: 'Axi6biI65DY',
               title: 'Fundamentos do Redux 02',
               duration: '09:13',
             },
@@ -29,9 +34,17 @@ const playerSlice = createSlice({
         },
       ],
     },
+    currentModuleIndex: 0,
+    currentLessonIndex: 0,
   },
 
-  reducers: {},
+  reducers: {
+    play: (state, action) => {
+      state.currentModuleIndex = action.payload[0]
+      state.currentLessonIndex = action.payload[1]
+    },
+  },
 })
 
 export const player = playerSlice.reducer
+export const { play } = playerSlice.actions
