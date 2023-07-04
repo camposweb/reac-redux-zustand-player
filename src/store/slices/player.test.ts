@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { player as reducer, play, next } from './player'
+import { player as reducer, play, next, PlayerState } from './player'
 
 /* test('reducers', () => {
   let state;
@@ -7,11 +7,12 @@ import { player as reducer, play, next } from './player'
   expect(state).toEqual({player:{course:{modules:[{id:'1',title:'Iniciando com React',lessons:[{id:'NvnJRLTG_5Y',title:'Fundamentos do Redux',duration:'09:13'}]},{id:'2',title:'Iniciando com Redux',lessons:[{id:'BDVdX9JbZB0',title:'Fundamentos do Redux 01',duration:'09:13'},{id:'Axi6biI65DY',title:'Fundamentos do Redux 02',duration:'09:13'}]}]},currentModuleIndex:1,currentLessonIndex:1}});
 }); */
 
-const exampleState = {
+const exampleState: PlayerState = {
   course: {
+    id: 1,
     modules: [
       {
-        id: '1',
+        id: 1,
         title: 'Iniciando com React',
         lessons: [
           {
@@ -27,7 +28,7 @@ const exampleState = {
         ],
       },
       {
-        id: '2',
+        id: 2,
         title: 'Iniciando com Redux',
         lessons: [
           {

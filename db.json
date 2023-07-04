@@ -1,43 +1,46 @@
 {
-	"courses": {
-		"modules": [
-			{
-				"id": "1",
-				"title": "Iniciando com React",
-				"lessons": [
-					{
-						"id": "NvnJRLTG_5Y",
-						"title": "Fundamentos do Redux",
-						"duration": "09:13"
-					},
-					{
-						"id": "P5ceqNLibpA",
-						"title": "Muito além do código",
-						"duration": "09:13"
-					},
-					{
-						"id": "2alg7MQ6_sI",
-						"title": "Como usar Git e Github",
-						"duration": "09:13"
-					}
-				]
-			},
-			{
-				"id": "2",
-				"title": "Iniciando com Redux",
-				"lessons": [
-					{
-						"id": "BDVdX9JbZB0",
-						"title": "Fundamentos do Redux 01",
-						"duration": "09:13"
-					},
-					{
-						"id": "Axi6biI65DY",
-						"title": "Fundamentos do Redux 02",
-						"duration": "09:13"
-					}
-				]
-			}
-		]
-	}
+	"courses": [
+		{
+			"id": 1,
+			"modules": [
+				{
+					"id": 1,
+					"title": "Iniciando com React",
+					"lessons": [
+						{
+							"id": "NvnJRLTG_5Y",
+							"title": "Fundamentos do Redux",
+							"duration": "09:13"
+						},
+						{
+							"id": "P5ceqNLibpA",
+							"title": "Muito além do código",
+							"duration": "09:13"
+						},
+						{
+							"id": "2alg7MQ6_sI",
+							"title": "Como usar Git e Github",
+							"duration": "09:13"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"title": "Iniciando com Redux",
+					"lessons": [
+						{
+							"id": "BDVdX9JbZB0",
+							"title": "Fundamentos do Redux 01",
+							"duration": "09:13"
+						},
+						{
+							"id": "Axi6biI65DY",
+							"title": "Fundamentos do Redux 02",
+							"duration": "09:13"
+						}
+					]
+				}
+			]
+		}
+	]
 }
