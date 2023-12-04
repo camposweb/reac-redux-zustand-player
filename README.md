@@ -1,0 +1,3 @@
+# Conceitos de Redux e Zustand
+
+Este projeto prático foi desenvolvido para fins de estudos dos conceitos do Redux e do Zustand, duas bibliotecas de gerenciamento de estado, Redux é uma biblioteca bastante difundida em todos tipos de projetos, desde em pequenos projetos como projetos gigantescos, já o Zustand está ainda começando a ser utilizado e sua curva de aprendizado é bem menor em comparação ao redux. Tive a oportunidade de ter um amplo conhecimento de ambas ferramentas.
